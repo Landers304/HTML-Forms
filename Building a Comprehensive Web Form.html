@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Web Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .selection-group {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Comprehensive Web Form</h1>
+
+    <!-- Form start -->
+    <form action="#">
+        <!-- Task 1: Creating a Selection Experience -->
+
+        <!-- Select Menu for Favorite Programming Language -->
+        <section>
+            <label for="programming-language">Favorite Programming Language:</label>
+            <select id="programming-language" name="programming-language" aria-label="Select your favorite programming language" required>
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+            </select>
+        </section>
+
+        <!-- Radio Buttons for Expertise Level -->
+        <section class="selection-group">
+            <label>Expertise Level:</label>
+            <label for="beginner">
+                <input type="radio" id="beginner" name="expertise" value="beginner" aria-labelledby="expertise-level" required> Beginner
+            </label>
+            <label for="intermediate">
+                <input type="radio" id="intermediate" name="expertise" value="intermediate" aria-labelledby="expertise-level"> Intermediate
+            </label>
+            <label for="advanced">
+                <input type="radio" id="advanced" name="expertise" value="advanced" aria-labelledby="expertise-level"> Advanced
+            </label>
+        </section>
+
+        <!-- Checkboxes for Preferred Development Platforms -->
+        <section class="selection-group">
+            <label>Preferred Development Platforms:</label>
+            <label for="web">
+                <input type="checkbox" id="web" name="platforms" value="web" aria-label="Web development platform"> Web
+            </label>
+            <label for="mobile">
+                <input type="checkbox" id="mobile" name="platforms" value="mobile" aria-label="Mobile development platform"> Mobile
+            </label>
+            <label for="desktop">
+                <input type="checkbox" id="desktop" name="platforms" value="desktop" aria-label="Desktop development platform"> Desktop
+            </label>
+        </section>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
